@@ -9,6 +9,6 @@ public class GerenciadorCias {
 		empresas = new ArrayList<>();
 	}
 
-	// primeiro gerenciador que vou fazer...
-	
+	// este gerenciador será utilizado ao longo deste demo
+		
 }
