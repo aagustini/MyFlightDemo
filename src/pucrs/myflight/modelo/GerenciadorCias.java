@@ -9,6 +9,11 @@ public class GerenciadorCias {
 		empresas = new ArrayList<>();
 	}
 
+	/***
+	 * 
+	 * @param cod - código da compania para pesquisa 
+	 * @return Objeto compania que contém o codigo <cod> retorna null caso não exista.
+	 */
 	public CiaAerea buscarPorCodigo(String cod) {
 		for (int pos=0; pos<empresas.size(); pos++) {
 			CiaAerea cia = empresas.get(pos);
