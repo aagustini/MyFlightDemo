@@ -1,0 +1,23 @@
+public CiaAerea buscarPorCodigo(String cod) {
+    for (int pos=0; pos<empresas.size(); pos++) {
+        CiaAerea a = empresas.get(pos);
+        if (a.getCodigo().equals(cod))
+            return a;
+    }
+    return null;
+}
+
+    /***
+	 * 
+	 * @param	<cod>igo de compania para pesquisa 
+	 * @return	CiaAerea que contém o codigo <cod>
+     * 
+	 */
+
+	public CiaAerea buscarPorCodigo(String cod) {
+		for (CiaAerea a : empresas) {
+			if (a.getCodigo().equals(cod))
+				return a;
+		}
+		return null;
+	}
