@@ -9,9 +9,11 @@ public class GerenciadorCias {
 		empresas = new ArrayList<>();
 	}
 
+	// 
+	// nao usar for, o mais adequado é trabalhar com foreach
+	//
 	public CiaAerea buscarPorCodigo(String cod) {
-		for (int pos=0; pos<empresas.size(); pos++) {
-			CiaAerea cia = empresas.get(pos);
+		for (CiaAerea cia : empresas) {
 			if (cia.getCodigo().equals(cod))
 				return cia;
 		}
